@@ -1,0 +1,142 @@
+.trackerBlock{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    margin: 100px auto;
+    display: table;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.welcome{
+    color: rgb(255, 145, 0);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.totalMoney{
+    color: rgb(17, 27, 16);
+    font-size: 20px;
+    margin: 0 0 10px;
+    /* text-shadow: 0px 5px 3px #292929; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.newTransaction{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    color: #B5EAEA;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #BBF1FA;
+    border: 0;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
+
+.newTransaction input[type="text"],
+
+.newTransaction select{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #1687A7;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newTransaction input[type="text"]:focus,
+.newTransaction select:focus{
+    outline: none;
+}
+
+.newTransaction input[type="text"]:hover,
+.newTransaction select:hover{
+    background-color: #FFF9B2;
+}
+
+.inputGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.addTransaction{
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    background-color: #FCDEC0;
+    border: 0;
+    margin: 8px 0 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.addTransaction:hover{
+    background-color: #DEBA9D;
+}
+
+.latestTransactions {
+    margin: 10px 0 0 0;
+    background-color: #CDFFFC;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);;
+}
+
+.latestTransactions p{
+    font-weight: bold;
+    padding: 0 0 5px;
+    margin: 0;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul li:last-child{
+    border-bottom: 0;
+    padding: 5px 0 0;
+}
+
+.exit{
+    background-color: azure;
+    color: #FF5C58;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.exit:hover{
+    background-color: #ddd;
+} 
+
+.expense{
+    color: rgb(255, 0, 0);
+}
+
+.income{
+    color: rgba(14, 224, 14, 0.767);
+}

@@ -1,0 +1,40 @@
+.regField {
+    width: 100%;
+    background-color: #D4ECDD;
+    color: black;
+    border: 1px solid #FFE194;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.submitBtn{
+    width: 100%;
+    background: #F3D5C0;
+    border: 0;
+    color: black;
+    padding: 15px;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.submitBtn:hover{
+    background: #D4B499;
+}
+
+.Error{
+    margin-bottom: 10px;
+    color: tomato;
+}
