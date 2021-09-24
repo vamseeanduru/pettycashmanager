@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import "./tracker.css";
 import fire from '../../config/Fire';
 import Transaction from './Transaction';
+import firebase from 'firebase/compat/app'; 
 
+
+const deleteRef = firebase.database().ref("/Transactions");
 
 class Tracker extends Component {
 
@@ -16,9 +19,19 @@ class Tracker extends Component {
         currentUID: fire.auth().currentUser.uid
     }
 
+
     // logout function
     logout = () => {
         fire.auth().signOut();
+    }
+
+    refreshPage = () => {
+        window.location.reload(false);
+    }
+
+    deleteItems = () => {
+        deleteRef.remove();
+        this.refreshPage();
     }
 
     handleChange = input => e => {
@@ -125,11 +138,11 @@ class Tracker extends Component {
                                     <option value="expense">Expense</option>
                                     <option value="income">Income</option>
                                 </select>
-                                <input
+                                <input className="number"
                                     onChange={this.handleChange('price')}
                                     value={this.state.price}
                                     placeholder="Price"
-                                    type="text"
+                                    type="number"
                                     name="price"
                                 />
                             </div>
@@ -152,9 +165,11 @@ class Tracker extends Component {
                         }
                     </ul>
                 </div>
+                <button  className="deleteBtn" onClick={this.deleteItems}>Delete</button>
             </div>
         );
     }
 }
 
 export default Tracker;
+
