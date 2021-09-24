@@ -1,1 +1,1 @@
-# pettycashmanager
+https://pettycashmanager.netlify.app/
