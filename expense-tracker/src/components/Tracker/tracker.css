@@ -19,7 +19,7 @@
 }
 
 .totalMoney{
-    color: rgb(17, 27, 16);
+    color: #FEF1E6;
     font-size: 20px;
     margin: 0 0 10px;
     /* text-shadow: 0px 5px 3px #292929; */
@@ -30,13 +30,12 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     text-align: center;
-    color: #B5EAEA;
+    color: rgba(234, 236, 239, 0.4);
     display: table;
     width: 100%;
     border-radius: 5px;
-    background-color: #BBF1FA;
-    border: 0;
-    padding: 10px;
+    background-color: rgba(234, 236, 239, 0.4);
+    padding: 15px;
     margin: 0 0 10px;
     font-size: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
@@ -47,11 +46,16 @@
 .newTransaction select{
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #1687A7;
     border-radius: 5px;
     font-size: 13px;
     padding: 7px;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid #1687A7;
+}
+
+.number{
+    border-radius: 5px;
+    border: 1px solid #1687A7;
 }
 
 .newTransaction input[type="text"]:focus,
@@ -79,6 +83,7 @@
     padding: 5px 10px;
     font-size: 15px;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
 
 .addTransaction:hover{
@@ -87,7 +92,7 @@
 
 .latestTransactions {
     margin: 10px 0 0 0;
-    background-color: #CDFFFC;
+    background-color:rgba(234, 236, 239, 0.4);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);;
@@ -121,12 +126,13 @@ ul li:last-child{
 }
 
 .exit{
-    background-color: azure;
+    background-color: #FBF4E9;
     color: #FF5C58;
     outline: none;
     border: none;
     padding: 8px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
 
 .exit:hover{
@@ -139,4 +145,19 @@ ul li:last-child{
 
 .income{
     color: rgba(14, 224, 14, 0.767);
+}
+
+.deleteBtn{
+    margin-top: 15px;
+    background-color: #FBF4E9;
+    color: #FF5C58;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
+
+.deleteBtn:hover{
+    background-color: #ddd;
 }
